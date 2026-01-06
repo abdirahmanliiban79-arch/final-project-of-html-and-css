@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
+.width{
+    width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header div{
+    width: 1220px;
+}
+
+.header{
+    /* max-width: 1110px; */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0 2rem; */
+    text-align: center;
+    padding: 1rem;
+}
+
+.header h1{
+    font-size: 2.6875rem;
+    font-weight: 800;
+    line-height: normal;
+    color: #fff;
+}
+
+.header h1 span{
+    color:#ff4d30 ;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+.nav-links{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 1.1875rem;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+}
+
+.nav-links a:hover{
+    color: #ff4d30;
+    border-bottom: 1px solid #ff4d30;
+}
+
+.btn{
+    border: none;
+    background-color: #ff4d30;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.nav-links button:hover{
+    color: #ff4d30;
+    background-color: #fff;
+}
+
+.hero-content{
+    position: absolute;
+    top: 38%;
+    left: 15%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h4{
+     font-size: 2rem;
+    font-weight: 800;
+    line-height: normal;
+    color: #fff;
+}
+
+
+.hero-content h1{
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: normal;
+    color: #fff;
+}
+
+
+.hero-content span{
+  color: #ff4d30;
+}
+
+
+.program-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.35rem;
+    margin-top:7rem ;
+    margin-bottom: 5rem;
+
+}
+
+.program-content h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.program-content span{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    color: #ff4d30;
+}
+
+.program-content img{
+    width: 2.8125rem;
+    height: 0.9375rem;
+}
+
+.program-content p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+    color: #524f4f;
+}
+
+.grid-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    gap: 3rem;
+    margin-inline: 2rem;
+}
+
+.grid-item img{
+    width:140px;
+    height: 140px;
+}
+
+.grid-item{
+    display: flex;
+    gap:2rem;
+}
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.item h1{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+}
+
+.item p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+    color: #615f5f;
+}
+
+.item span{
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: normal;
+    color: #ff4d30;
+}
+
+.background-section{
+    /* background: url('https://www.caloricresponsibilitytrainingandconditioning.com/wp-content/uploads/2014/11/Metabolic-Testing-Slide.jpg')center / cover no-repeat; */
+    width: 100%;
+    margin-block: 7rem; 
+    position: relative;
+    height: 480px;
+    max-width: 480px;
+}
+
+.background-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    margin-block: 7rem;
+}
+
+.background-content h1{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: normal;
+    color: #fff;
+}
+.background-content span{
+    color: #ff4d30;
+}
+
+.background-content p{
+   
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+
+}
+
+
+.class{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.class h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+}
+
+.class span{
+    color: #ff4d30;
+}
+
+.class img{
+    width: 2.8125rem;
+    height: 0.9375rem;
+}
+
+.class p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+    color: #524f4f;
+}
+
+.class-grids{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1fr);
+    gap: 3rem;
+    max-width: 1110px;
+    margin: 0 auto;
+    /* height: 651.500px; */
+    /* width: 1277.110px; */
+    margin: 5rem;
+}
+
+.right-grid{
+    grid-column: 3 / span 5;
+    
+}
+
+.left img{
+    width: 2.29125rem;
+    height:2.29125rem;
+    max-width: 100%;
+}
+.left-grid{
+    display: flex;
+    flex-direction: column;
+    gap:2rem ;
+}
+
+.left{
+    box-shadow: 10px 10px 36px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 1rem;
+    width: 383.37px;
+    height: 107.98px;
+    border-radius: 0.4rem;
+}
+
+.left p{
+  font-size: 1.5rem;
+  font-weight: 700;  
+  color: #000;
+}
+
+.btn-view {
+   background-color: #ff4d30;
+    
+   text-align: center;
+  
+    border-radius: 0.75rem;
+}
+
+.btn-view button {
+    background-color: #ff4d30;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 2rem;
+    border: none;
+    border-radius: 0.75rem;
+    color: #fff;
+   
+}
+
+.right img{
+    width: 45.328125rem;
+    height:19.11625rem;
+    border-radius: 0.75rem;
+}
+
+.right{
+    display: flex;
+    flex-direction:column ;
+    gap: 1rem;
+    align-items: self-start;
+    justify-content: flex-start;
+}
+
+.right h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+}
+
+
+.right p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #524f4f;
+}
+
+
+.SCHEDULE{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.9)),
+    url(https://www.svdjk.de/images/svdjk/svdjk_bg4_blu.jpg) center / cover no-repeat;
+  height: 180vh;
+  width: 100%;
+  margin-block: 8%;
+}
+.schedule-content img{
+    width: 2.8125rem;
+    height: 0.9375rem;
+}
+
+.schedule-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    gap: 1rem;
+}
+
+.schedule-content h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+}
+
+.schedule-content h1 span{
+    color: #ff4d30;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+}
+
+.schedule-content p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.form h4{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.form span{
+    color: #ff4d30;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
+    height: 100px;
+}
+
+.schedule-content{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+ .schedule-time td{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 4rem;
+    margin-left: 4rem;
+    color: #fff;
+ }
+
+.trainer-content img{
+       width: 2.8125rem;
+    height: 0.9375rem;
+}
+ .trainer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    width: 1110px;
+    margin: 0 auto;
+    text-align: center;
+ }
+ .trainer-content h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+ }
+.trainer-content span{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff4d30;
+ }
+
+ .trainer-content p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #524f4f;
+ }
+
+
+
+.grid-trainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 1.25rem;
+}
+.tr-img{
+    width: 18.125rem;
+    height: 13.75rem;
+}
+.trainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-inline: 1rem;
+    margin-top: 3rem;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: self-start;
+    padding: 1.5rem;
+     box-shadow: 10px 10px 36px rgba(0,0,0,0.25);
+     border-radius: 2rem;
+}
+.trainer h5{
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #ff4d30;
+}
+
+.trainer h3{
+    font-weight: 500;
+    font-size: 1.625rem;
+    color: #000;   
+}
+
+.trainer .iq{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #524f4f;   
+}
+i{
+    cursor: pointer;
+}
+i:hover{
+    color: #ff4d30;
+}
+
+.last-section{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+    padding: 80px 5%;
+}
+
+.register{
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),
+     url(https://gymgear.com/cdn/shop/articles/AdobeStock_317724775-scaled-1_cd32751c-29ce-4417-9098-426b53d91e88-3050369.jpg?v=1763740793) center / cover no-repeat;
+    width: 100%;
+    position: relative;
+}
+form{
+   background-color: #fff;
+   padding: 3.125rem;
+   border-radius: 6px;
+   /* height: 477.5px; */
+   margin-inline: 1.5rem;
+   font-size: 2rem;
+   padding: 1rem;
+   width: 70%;
+}
+form input{
+     font-size:1rem;
+   padding: 1rem;
+}
+
+.map{
+    width: 100%;
+}
+.map iframe{
+    width: 100%;
+    height: 450px;
+}
+
+.map .register{
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+footer{
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 2rem;
+}
+
+footer span{
+    color: #ff4d30;
+}
+
+
+
+@media (max-width:768px){
+
+
+    .nav-links{
+        display: none;
+    }
+
+    .hero-content h4{
+    font-size: 1.3125rem;
+    font-weight: 800;
+    line-height: normal;
+    color: #fff;
+    }
+    .hero-content h1{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: normal;
+    color: #fff;
+}
+
+
+.program-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.program-content h1{
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: normal;
+    color: #524f4f;
+}
+
+.program-content span{
+     font-size: 1.75rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+.program-content p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: normal;
+    color: #524f4f;
+    text-align: center;
+    margin-inline: 5rem;
+}
+
+.grid-items{
+    grid-template-columns: 1fr;
+    margin-inline: 1.75rem;
+}
+
+.item h1{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+}
+
+.item span{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: normal;
+    color: #ff4d30;
+}
+
+.item p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    color: #615f5f;
+}
+
+
+.background img{
+    width: calc(50% - 480px);
+}
+.background-content {
+  gap: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 480px);
+}
+
+
+.class-grids{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.4rem;
+    flex-direction: row;
+}
+
+.right img{
+    width: 100%;
+}
+
+
+
+.grid-trainer{
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
